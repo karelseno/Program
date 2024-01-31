@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+	int markA, markB, markC, totalsum;
+	float averageMark;
+	cout<<"please enter the mark of the first student:";
+	cin>>markA;
+	cout<<"please enter the mark of the second student:";
+	cin>>markB;
+	cout<<"please enter the mark of the last student: ";
+	cin>>markC;
+	totalsum = markA + markB + markC;
+	averageMark = (float)totalsum / 3;
+	cout<<"the average mark of the three student: "<<averageMark;
+	
+}
