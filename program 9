@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+	int age;
+	float height;
+	age = 22;
+	height = 1.65;
+	cout<<"ace is "<<age<<" years old and his height is "<<height<<" meter.\n";
+}
