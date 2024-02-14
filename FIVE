@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+
+int alpha(int);
+void beta(int &);
+
+int main(){
+	int x=2, z=4;
+	cout<<"X: "<<x<<" Before alpha\n";
+	cout<<" Value returned by alpha: "
+		<< alpha(x)<<endl;
+	cout<<"X: " <<x<<" After alpha\n"<<endl;
+	
+	cout<<"Z: "<<z<<" Before beta"<<endl;
+	beta(z);
+	cout<<"Z:"<<z<<" After beta"<<endl;
+	
+}
+int alpha (int num){
+	return num *= num;
+	
+}
+void beta (int &numRef){
+	numRef *= numRef;
+}
