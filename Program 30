@@ -3,7 +3,7 @@
 using namespace std;
 
 int main(){
-	char x[] = "Happy Birthda To you";
+	char x[] = "Happy Birthday To you";
 	char y[25], z[15];
 	
 	cout<<"The String In Array x is:"<<x
