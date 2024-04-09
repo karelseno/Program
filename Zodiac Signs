@@ -1,0 +1,44 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int day, month;
+
+    
+    cout << "Enter your birth day (1-31): ";
+    cin >> day;
+
+    cout << "Enter your birth month (1-12): ";
+    cin >> month;
+    
+   
+    if ((month == 3 && day >= 21) || (month == 4 && day <= 19))
+        cout << "Your zodiac sign is Aries.\n -Aries is a passionate, motivated, and confident leader who builds community with their cheerful disposition and relentless determination." << endl;
+    else if ((month == 4 && day >= 20) || (month == 5 && day <= 20))
+        cout << "Your zodiac sign is Taurus.\n -Taurus is an earth sign represented by the bull. Like their celestial spirit animal, Taureans enjoy relaxing in serene, bucolic environments, surrounded by soft sounds, soothing aromas, and succulent flavors. " << endl;
+    else if ((month == 5 && day >= 21) || (month == 6 && day <= 20))
+        cout << "Your zodiac sign is Gemini.\n -Gemini is a zodiac sign that represents two different personalities in one, making them expressive and quick-witted." << endl;
+    else if ((month == 6 && day >= 21) || (month == 7 && day <= 22))
+        cout << "Your zodiac sign is Cancer.\n -Cancer is ruled by the moon, the celestial body that represents comfort, self-care, and maternal energies. Accordingly, Cancers tend to be domestically oriented" << endl;
+    else if ((month == 7 && day >= 23) || (month == 8 && day <= 22))
+        cout << "Your zodiac sign is Leo.\n -Leo is represented by the lion, and these spirited fire signs are the kings and queens of the celestial jungle. " << endl;
+    else if ((month == 8 && day >= 23) || (month == 9 && day <= 22))
+        cout << "Your zodiac sign is Virgo.\n -Virgo is an earth sign historically represented by the goddess of wheat and agriculture, an association that speaks to Virgo's deep-rooted presence in the material world. Virgos are logical, practical, and systematic in their approach to life." << endl;
+    else if ((month == 9 && day >= 23) || (month == 10 && day <= 22))
+        cout << "Your zodiac sign is Libra.\n -Libra is an air sign represented by the scales (interestingly, the only inanimate object of the zodiac), an association that reflects Libra's fixation on balance and harmony. " << endl;
+    else if ((month == 10 && day >= 23) || (month == 11 && day <= 21))
+        cout << "Your zodiac sign is Scorpio.\n -Scorpios' star sign dates are between 23rd October and 1st November, and belong to the Water element of the zodiac (along with Cancer and Pisces)." << endl;
+    else if ((month == 11 && day >= 22) || (month == 12 && day <= 21))
+        cout << "Your zodiac sign is Sagittarius.\n -Sagittarius is a mutable sign, meaning it is associated with adaptability and flexibility. This perfectly reflects the archers' deep-rooted desire for change." << endl;
+    else if ((month == 12 && day >= 22) || (month == 1 && day <= 19))
+        cout << "Your zodiac sign is Capricorn.\n -Capricorns are the hardest workers of the zodiac and love nothing more than getting ahead in life. They are ambitious, determined, materialistic and strong." << endl;
+    else if ((month == 1 && day >= 20) || (month == 2 && day <= 18))
+        cout << "Your zodiac sign is Aquarius.\n -Aquarius is ruled by Uranus, the planet that governs innovation, technology, and surprising events. Uranus perfectly mirrors Aquarius' distinctive attitude, complementing the nontraditional nature of these visionary air signs. Aquarians are big thinkers, but mustn't forget their immediate surroundings." << endl;	 
+    else if ((month == 2 && day >= 19) || (month == 3 && day <= 20))
+        cout << "Your zodiac sign is Pisces." << endl;
+    else
+        cout << "Invalid date!" << endl;
+
+    return 0;
+}
+
