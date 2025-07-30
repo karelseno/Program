@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pediatric Health Care Center</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e3f2fd;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #42a5f5;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #64b5f6;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 20px;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .service-card {
+      background-color: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      flex: 1;
+      min-width: 250px;
+    }
+    footer {
+      background-color: #42a5f5;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Sunny Smiles Pediatric Health Care Center</h1>
+    <p>We care for your child's bright future</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Sunny Smiles Pediatric Health Care Center provides comprehensive pediatric care to children from birth through adolescence. Our dedicated team of pediatricians ensures your child's health and well-being through compassionate and expert care.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-card">
+        <h3>General Checkups</h3>
+        <p>Routine health exams and developmental assessments.</p>
+      </div>
+      <div class="service-card">
+        <h3>Vaccinations</h3>
+        <p>Complete immunization services for all age groups.</p>
+      </div>
+      <div class="service-card">
+        <h3>Newborn Care</h3>
+        <p>Specialized care for newborns and infants.</p>
+      </div>
+      <div class="service-card">
+        <h3>Nutrition Counseling</h3>
+        <p>Diet and nutrition guidance for growing children.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>📍 123 Smile Lane, Happyville</p>
+    <p>📞 (123) 456-7890</p>
+    <p>📧 contact@sunnysmiles.com</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Sunny Smiles Pediatric Health Care Center. All rights reserved.
+  </footer>
+
+</body>
+</html>
