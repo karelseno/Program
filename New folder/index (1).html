@@ -46,17 +46,36 @@
           </Style>
           </head>
           </body>
-          
           <div class="login-container">
             <h2>Pediatric Health center Login  </h2>
-            <form action="index.html" method="post">
+            <form action="Index.html" method="post">
               <input type="text" name="username"placeholder="Enter username" required>
               <input type="password" name="password" placeholder="enter password"required>
               <button type="submit">Login</button>
+		<div id = "errorMessage" class="error"></div>
             </form>
+	
             <div class="footer">
               2025 Pediatric Health center
           </div>
           </div>
-  </body>
+	<script>
+	    const loginForm = document.getElementById("loginForm");
+	    const errorMessage = document.getElementbyId("errorMessage");
+
+	   loginForm.addEventListener("submit", function (event) {
+		event.preventDefault();
+		const username = document.getElementById("username").value;
+		const password = document.getElementById("password").value;
+
+		if (username === "admin" && password === "admin123"){
+			window.location.href = "dashboard.html";
+ 		} else {
+			errorMessage.textContent = "Incorrect username or password.";
+
+		}
+	});
+ 
+	</script>
+</body>
 </html>
