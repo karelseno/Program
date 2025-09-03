@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <title>Pediatric Health Care Center</title>
+    <style>
+        header {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+        header img {
+            margin-right: 15px; /* space between image and text */
+            border-radius: 8px; /* optional rounded edges */
+        }
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+        header p {
+            margin: 5px 0 0 0;
+            font-size: 16px;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Picture.Jpeg" alt="Picture" height="120" width="120" id="image"/>
+        <div>
+            <h1>Pediatric Health Care Center</h1>
+            <p>We care for your babies Vaccinations</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a href="sss.html">System Overview</a>
+    </nav>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service-card">
+                <h3>General Checkups</h3>
+                <p>Routine health exams and developmental assessments.</p>
+            </div>
+            <div class="service-card">
+                <h3>Vaccinations</h3>
+                <p>Complete immunization services for all age groups.</p>
+            </div>
+            <div class="service-card">
+                <h3>Newborn Care</h3>
+                <p>Specialized care for newborns and infants.</p>
+            </div>
+            <div class="service-card">
+                <h3>Nutrition Counseling</h3>
+                <p>Diet and nutrition guidance for growing children.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Pediatric Health Care Center provides Babies Vaccinations.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>📍 Lt. J. Francisco, Diliman Quezon City</p>
+        <p>📞 09984292174</p>
+        <p>📧 julianamarieacosta1@gmail.com </p>
+    </section>
+
+    <footer>
+        &copy; Pediatric Health Care Center. All Babies Have A Good Treat Of Vaccinations
+    </footer>
+</body>
+</html>
