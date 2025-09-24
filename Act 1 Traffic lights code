@@ -1,0 +1,67 @@
+
+int redLED = 8;
+int yellowLED = 9;
+int greenLED = 10;
+
+// 7-segment segment pins (a–g)
+int segPins[7] = {2, 3, 4, 5, 6, 7, 11}; // a,b,c,d,e,f,g
+
+// Number patterns for common cathode 7-seg (a–g)
+byte numbers[10][7] = {
+  {1,1,1,1,1,1,0}, // 0
+  {0,1,1,0,0,0,0}, // 1
+  {1,1,0,1,1,0,1}, // 2
+  {1,1,1,1,0,0,1}, // 3
+  {0,1,1,0,0,1,1}, // 4
+  {1,0,1,1,0,1,1}, // 5
+  {1,0,1,1,1,1,1}, // 6
+  {1,1,1,0,0,0,0}, // 7
+  {1,1,1,1,1,1,1}, // 8
+  {1,1,1,1,0,1,1}  // 9
+};
+
+// Function to display a number
+void displayNumber(int num) {
+  for (int i = 0; i < 7; i++) {
+    digitalWrite(segPins[i], numbers[num][i]);
+  }
+}
+
+void setup() {
+  // LEDs
+  pinMode(redLED, OUTPUT);
+  pinMode(yellowLED, OUTPUT);
+  pinMode(greenLED, OUTPUT);
+
+  // 7-seg pins
+  for (int i = 0; i < 7; i++) {
+    pinMode(segPins[i], OUTPUT);
+  }
+}
+
+void loop() {
+  // 🔴 Red light - countdown 9 → 0
+  digitalWrite(redLED, HIGH);
+  for (int i = 5; i >= 0; i--) {
+    displayNumber(i);
+    delay(1000);
+  }
+  digitalWrite(redLED, LOW);
+
+  // 🟢 Green light - countdown 9 → 0
+  digitalWrite(greenLED, HIGH);
+  for (int i = 5; i >= 0; i--) {
+    displayNumber(i);
+    delay(1000);
+  }
+  digitalWrite(greenLED, LOW);
+
+  // 🟡 Yellow light - countdown 3 → 0
+  digitalWrite(yellowLED, HIGH);
+  for (int i = 5; i >= 0; i--) {
+    displayNumber(i);
+    delay(1000);
+  }
+  digitalWrite(yellowLED, LOW);
+}
+
