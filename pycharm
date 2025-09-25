@@ -1,0 +1,25 @@
+# Humidity and Temperature Sensor with DHT11/DHT22
+# Run this in PyCharm (on Raspberry Pi or with GPIO library support)
+
+import Adafruit_DHT
+import time
+
+# Choose sensor type: DHT11 or DHT22
+SENSOR = Adafruit_DHT.DHT11  # or Adafruit_DHT.DHT22
+
+# Set the GPIO pin connected to the sensor
+PIN = 4  # Example: GPIO4 (change based on your wiring)
+
+print("Reading Humidity and Temperature Sensor...")
+
+while True:
+    # Try to grab a sensor reading
+    humidity, temperature = Adafruit_DHT.read_retry(SENSOR, PIN)
+
+    # Check if a valid reading was received
+    if humidity is not None and temperature is not None:
+        print(f"Temp: {temperature:.1f}°C  |  Humidity: {humidity:.1f}%")
+    else:
+        print("Failed to get reading. Try again!")
+
+    time.sleep(2)  # wait 2 seconds before next reading
