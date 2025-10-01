@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background Image with Blur & Filter */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://t4.ftcdn.net/jpg/01/74/30/01/360_F_174300156_SZg28lxL163nFvDBstSFtEFWQtHu8c6R.jpg") 
+              no-repeat center center fixed;
+  background-size: cover;
+  filter: blur(8px) brightness(0.7); /* blur + darker effect */
+  z-index: -1; /* para nasa likod lang siya */
+}
+
+/* Para lahat ng content malinaw */
+main, header, section, nav, footer {
+  position: relative;
+  z-index: 1;
+}
+
+
+/*login form*/
+.login-container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  width: 350px;
+  text-align: center;
+  backdrop-filter: blur(5px);
+}
+
+/*logo sa login*/
+.logo {
+  width: 200px;       
+  height: auto;       
+  margin-bottom: 15px; 
+}
+
+.login-container h2 {
+  color: #0077b6;
+  margin-bottom: 20px;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #b3e0f2;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.login-container input:focus {
+  border-color: #0077b6;
+  box-shadow: 0 0 8px rgba(0, 119, 182, 0.3);
+}
+
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  background: #00b4d8;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-container button:hover {
+  background: #0077b6;
+}
+
+.error {
+  margin-top: 10px;
+  color: red;
+  font-size: 14px;
+}
+
+.footer {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #666;
+}
+/*main html*/

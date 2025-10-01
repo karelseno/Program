@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Features Table - Pediatric Health Center</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f9ff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #3498db;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .container {
+            padding: 30px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        th, td {
+            padding: 15px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f9ff;
+        }
+
+        @media screen and (max-width: 768px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+
+            th {
+                position: sticky;
+                top: 0;
+                background-color: #2980b9;
+            }
+
+            td {
+                padding-left: 50%;
+                position: relative;
+            }
+
+            td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 15px;
+                top: 15px;
+                font-weight: bold;
+                color: #2c3e50;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Pediatric Health Center System</h1>
+    <p>All Babies Have A Good vaccination</p>
+</header>
+
+<div class="container">
+    <h2>System Features Overview</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Feature Name</th>
+                <th>Description</th>
+                <th>Access Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="Feature Name">Patient Management</td>
+                <td data-label="Description">Add, update, and view patient records including personal data, history, and vaccination logs.</td>
+                <td data-label="Access Role">Admin, Staff</td>
+            </tr>
+            <tr>
+                <td data-label="Feature Name">Doctor Management</td>
+                <td data-label="Description">Manage doctors’ profiles, schedules, and assigned patients.</td>
+                <td data-label="Access Role">Admin</td>
+            </tr>
+            <tr>
+                <td data-label="Feature Name">Appointment Scheduling</td>
+                <td data-label="Description">Book, reschedule, and cancel appointments with calendar view support.</td>
+                <td data-label="Access Role">Admin, Staff</td>
+            </tr>
+            <tr>
+                <td data-label="Feature Name">Medical Records</td>
+                <td data-label="Description">Store and review diagnoses, treatments, prescriptions, and notes.</td>
+                <td data-label="Access Role">Admin, Doctor</td>
+            </tr>
+            <tr>
+                <td data-label="Feature Name">Growth Monitoring</td>
+                <td data-label="Description">Track and chart patient height, weight, and BMI over time.</td>
+                <td data-label="Access Role">Doctor, Staff</td>
+            </tr>
+            <tr>
+                <td data-label="Feature Name">Vaccination Records</td>
+                <td data-label="Description">Log and update immunization details for pediatric patients.</td>
+                <td data-label="Access Role">Staff, Doctor</td>
+            </tr>
+            <tr>
+                <td data-label="Feature Name">Reports & Analytics</td>
+                <td data-label="Description">Generate reports about appointments, patient demographics, and health trends.</td>
+                <td data-label="Access Role">Admin</td>
+            </tr>
+            <tr>
+                <td data-label="Feature Name">User Management</td>
+                <td data-label="Description">Create and manage user accounts and roles (Admin, Doctor, Staff).</td>
+                <td data-label="Access Role">Admin</td>
+            </tr>
+            <tr>
+                <td data-label="Feature Name">Notifications & Reminders</td>
+                <td data-label="Description">Send alerts for appointments and vaccination schedules.</td

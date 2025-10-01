@@ -1,0 +1,91 @@
+/* Dinagdag: General body styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: linear-gradient(135deg, #e6f7ff, #ccf2ff); /* light healthcare theme */
+  color: #333;
+}
+
+/*  Header styling */
+header {
+  background: #0077b6; /* healthcare blue */
+  color: white;
+  padding: 30px;
+  text-align: center;
+  border-bottom: 5px solid #00b4d8;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+header p {
+  font-size: 1.1rem;
+  margin-top: 5px;
+}
+
+/*  Navigation styling */
+nav {
+  background: #00b4d8;
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffdd00; /* highlight effect */
+}
+
+/*  Section styling */
+section {
+  padding: 40px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section h2 {
+  color: #0077b6;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/*  Service cards */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.service-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/*  Footer styling */
+footer {
+  background: #0077b6;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
