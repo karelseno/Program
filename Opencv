@@ -1,0 +1,29 @@
+import cv2
+
+# Load image
+image = cv2.imread("xray.jpg")
+
+# Check kung nabasa ang image
+if image is None:
+    print("Hindi makita ang image!")
+    exit()
+
+# Convert to grayscale
+gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+
+# Resize
+resized = cv2.resize(gray, (800, 600))
+
+# Blur
+blur = cv2.GaussianBlur(resized, (5, 5), 0)
+
+# Edge detection
+edges = cv2.Canny(blur, 50, 150)
+
+# Display
+cv2.imshow("Original Grayscale", resized)
+cv2.imshow("Blur", blur)
+cv2.imshow("Edges", edges)
+
+cv2.waitKey(0)
+cv2.destroyAllWindows()
